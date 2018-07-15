@@ -21,7 +21,11 @@ In an engineering team it's important for us to follow a basic set of standards.
     2. Installation
     3. Instructions for Local Development
 2. Create a `develop` branch
-3. Optionally, go to Pull Requests tab, click on Labels, and create labels such as `DO NOT MERGE`, `WIP`
+    1. Go to Settings > Branches
+        1. Set the default branch to `develop`
+        2. Go to Protected Branches > Choose a Branch > `develop`
+        3. Use the following screenshot as guidelines for configuring `develop` and permanent branches:
+3. Go to Pull Requests > Labels, and create labels such as `DO NOT MERGE`, `WIP`
 
 ## Examples
 
