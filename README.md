@@ -31,18 +31,29 @@ In an engineering team it's important for us to follow a basic set of standards.
 
 ## Examples
 
-### ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Bad ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
+#### ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Bad Example 1 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
 
-### ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Good ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)
+TODO George - insert screenshot and link
 
+* ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) PR Title is unclear
+* ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) PR Description is empty
+* ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Individual commit messages are unclear
+* ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) There are no reviews before PR was merged
+* ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) No deployment checks
 
-* No deployment checks
-* No 
+#### ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Good Example ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)
+
+TODO George
 
 ## Git and Project Management
 
-Most software companies use project planning tools (JIRA) as part of their SDLC.
+Most software companies use project planning tools like JIRA as part of their SDLC.  Having good habits around working between JIRA and Git will make life easier for developers, QA, project managers, and everyone involved!
 
+###### Conventions: Git and JIRA
+
+* Use the a feature or bug's ticket ID as part of your PR titles and commit messages.  
+  * In JIRA, the ticket ID is usually a short string such as `AB-123`, where `AB` is the board your team works on.
+* In the PR, add the ticket's URL to the PR description.   
 
 ## Git and CI/CD
 
