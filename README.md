@@ -18,6 +18,7 @@ In an engineering team it's important for us to follow a basic set of standards.
 ## GitHub Conventions
 
 ###### Conventions: Initializing a Git Repository
+
 1. Create a README.md
     1. Title and Summary
     2. Installation
@@ -27,7 +28,22 @@ In an engineering team it's important for us to follow a basic set of standards.
         1. Set the default branch to `develop`
         2. Go to Protected Branches > Choose a Branch > `develop`
         3. Use the following screenshot as guidelines for configuring `develop` and permanent branches:
+
+Recommended:
+
 3. Go to Pull Requests > Labels, and create labels such as `DO NOT MERGE`, `WIP`
+4. Set up a [template for your PR](https://help.github.com/articles/creating-a-pull-request-template-for-your-repository/)
+
+###### Conventions: Creating a Pull Request (PR)
+
+
+
+###### Conventions: Pull Request Good Practices
+
+Keep discussion in the PR rather than in another medium like Slack, because:
+* More people can easily read the comments and help review
+* Future maintainers can follow the discussion
+
 
 ## Examples
 
@@ -40,6 +56,11 @@ TODO George - insert screenshot and link
 * ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Individual commit messages are unclear
 * ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) There are no reviews before PR was merged
 * ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) No deployment checks
+
+TODO George - insert 2nd screenshot and link
+
+* ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) One commit did not even have a letter
+* ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) The PR requester merged without any reviewer
 
 #### ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Good Example ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)
 
@@ -75,3 +96,8 @@ Semver example: `1.6.20`
 * Use `0.x.x` versions for rapid development before incrementing to a major release
   * If we are writing v2, then keep semver to `0.1.x` until we are ready to increment to `2.0.0` 
 * In Node, the version is kept inside `package.json` in the `"version": "x.x.x"` attribute
+
+
+## GitLab
+
+Most of our conventions apply to GitLab due to its similarity to GitHub.  Note that Pull Requests in GitHub are called Merge Requests in GitLab.
