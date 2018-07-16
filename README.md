@@ -15,7 +15,9 @@ In an engineering team it's important for us to follow a basic set of standards.
         * No extraneous "Merge Pull" commits clogging history
         * More difficult learning curve
 
-###### Initializing a Git Repository
+## GitHub Conventions
+
+###### Conventions: Initializing a Git Repository
 1. Create a README.md
     1. Title and Summary
     2. Installation
@@ -45,3 +47,20 @@ Most software companies use project planning tools (JIRA) as part of their SDLC.
 ## Git and CI/CD
 
 and deployment process (GitLab, Travis).
+
+## Release Versioning
+
+Semantic Versioning (semver) is the standard way of differentiating our releases.  [Read the full documentation](https://semver.org/)
+
+Semver example: `1.6.20`
+  * Major version 1
+  * Minor version 6
+  * Patch version 20
+  * For exceptions, an [optional label can be attached](https://semver.org/#spec-item-11), such as `2.0.0-rc.1` or `-beta`
+    
+###### Conventions: Semver
+
+* When a new project is created, start at `0.1.0`
+* Use `0.x.x` versions for rapid development before incrementing to a major release
+  * If we are writing v2, then keep semver to `0.1.x` until we are ready to increment to `2.0.0` 
+* In Node, the version is kept inside `package.json` in the `"version": "x.x.x"` attribute
