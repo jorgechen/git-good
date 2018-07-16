@@ -1,15 +1,17 @@
 <!--
     HOW TO USE THIS TEMPLATE:
-    - Ensure the link to the pivotal tracker ticket actually works.
+    - Edit/remove sections based on what your team or repository prefers
     - Fill out as much of this template as possible.
-    - Remove any extraneous headings or comments.
+    - Remove any extraneous headings or comments, including this one that you're reading :)
  -->
 
-JIRA Ticket: https://arundo.atlassian.net/browse/AQ-000
+&nbsp; | Link
+ --- |---
+Ticket: | https://MY_COMPANY_NAME.atlassian.net/browse/AB-123
 
 # Overview
 
-Write a brief description of this branch's changes.
+<!-- Write a brief description of this branch's changes. -->
 
 # Highlights
 <!-- List any notable additions(New or removed NPM modules, lint changes, etc.), refactors, subtractions to the code base -->
