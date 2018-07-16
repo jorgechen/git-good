@@ -16,21 +16,21 @@ Ticket: | https://MY_COMPANY_NAME.atlassian.net/browse/AB-123
 # Highlights
 <!-- List any notable additions(New or removed NPM modules, lint changes, etc.), refactors, subtractions to the code base -->
 
-+ Highlight 1
-+ Highlight 2
-+ Highlight 3
+- Highlight 1
+- Highlight 2
+- Highlight 3
 
-# How to test
-<!-- List steps to test functionality here; Use unit test assertions when applicable. -->
+<!-- Insert screenshots, if applicable -->
 
-## Case 1
-<!-- Copy + Paste this case to create multiple test cases -->
+# How to Test
 
-*Expected result (It should...)*
+- First, ... 
+- Then
+- Then
 
-1. First Step
-1. Second Step
-1. Third Step (etc.)
+<!-- Describe how to test and what the expected results are. -->
+
+It should ... 
 
 <!--
   Github code reviews are required for merge approval. To explicitly require sign-off, assign the members and tag
