@@ -32,7 +32,12 @@ Ticket: | https://MY_COMPANY_NAME.atlassian.net/browse/AB-123
 
 It should ... 
 
+# TODO
+
 <!--
-  Github code reviews are required for merge approval. To explicitly require sign-off, assign the members and tag
-  them in the appropriate slack channel.
+  If you prefer to create a "work in progress" PR, it may be useful to track the state of the PR using a TODO list:
  -->
+ 
+- [ ] Design A
+- [ ] Implement B 
+- [ ] Implement C 
