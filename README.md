@@ -62,7 +62,7 @@ TODO George - insert 2nd screenshot and link
 * ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) One commit did not even have a letter
 * ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) The PR requester merged without any reviewer
 
-#### ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Good Example ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)
+### ![#00ee11](https://placehold.it/15/00ee11/000000?text=+) Good ![#00ee11](https://placehold.it/15/00ee11/000000?text=+)
 
 TODO George
 
