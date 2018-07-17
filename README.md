@@ -1,9 +1,10 @@
-# Git Good: GitHub Usage Conventions 
+# Good Practices with Git
 
 In an engineering team it's important for us to follow a basic set of standards.  In order to maximize our productivity as developers in a team, it's important to use version control (Git) effectively with several good practices. 
 
+These conventions are **not mandatory**, they are here for your reference so that your team can pick the habits that work for you.
 
-## Master List of Conventions 
+## Summary of GitHub Conventions
 
 * Types of merge
     * Merge
