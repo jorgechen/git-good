@@ -24,9 +24,9 @@ Ticket: | https://MY_COMPANY_NAME.atlassian.net/browse/AB-123
 
 # How to Test
 
-- First, ... 
-- Then
-- Then
+1. ... 
+2. 
+3. 
 
 <!-- Describe how to test and what the expected results are. -->
 
