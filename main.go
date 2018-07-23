@@ -8,4 +8,5 @@ func main() {
 	fmt.Println("2. Take top cup")
 	fmt.Println("3. Dump grinds")
 	fmt.Println("4. Replace filter")
+	fmt.Println("5. Place in grinder")
 }
