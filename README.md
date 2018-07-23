@@ -17,6 +17,7 @@ These recommendations are **not comprehensive nor mandatory**, but they are a go
 * [Other Habits](#other-habits)
 * [Examples](#examples)
 * [Miscellaneous](#miscellaneous)
+    * [GUI Tools](#gui-tools)
     * [Git and Project Management](#git-and-project-management)
     * [Release Versioning](#release-versioning)
     * [Git and CI/CD](#git-and-cicd)
@@ -110,7 +111,7 @@ Merge is the default method of moving changes from branch A to branch B.  When m
 
 A squash merge combines all the changes you made to a feature branch into a single commit.  This single commit then gets merged into your main branch.
 
-With squash merge, 1 PR === 1 commit in the main branch.  For example, [this PR](https://github.com/arundo/git-conventions/pull/3) with 20+ commits, when squashed, became a [single clear commit](https://github.com/arundo/git-conventions/commits/develop).
+With squash merge, 1 PR === 1 commit in the main branch.  For example, [this PR](https://github.com/arundo/git-conventions/pull/3) with 20+ commits became a [single clear commit](https://github.com/arundo/git-conventions/commits/develop) when we used squash merge.
 
 Squash is minimalist and effective.
 
@@ -133,6 +134,8 @@ Squash is minimalist and effective.
 Rebase allows us to "replay our commits" from one branch to another.  Using rebase is a clean way to maintain team projects, because it allows us to fix unclear and redundant commits.  
 
 Once a feature branch is rebased on a development branch, merging the feature into the development branch will simply fast-forward the commit(s) of our new feature.  
+
+NOTE: If you are worth with 2+ people on a feature branch, do not rebase until the end to avoid conflicts!
 
 * Pros
     * No "Merge" commits cluttering the commit history
@@ -225,12 +228,32 @@ We should always clean up stale branches after their PRs have been closed.  Keep
 
 ---
 
-### ![#00ee11](https://placehold.it/15/00ee11/000000?text=+) Good Example 1
+### ![#00ee11](https://placehold.it/15/00ee11/000000?text=+) [Good Example 1](https://github.com/arundo/enterprise/pulls?utf8=%E2%9C%93&q=)
 
-Good examples of using PRs can be found in the [Enterprise UI repository](https://github.com/arundo/enterprise/pulls?utf8=%E2%9C%93&q=)
+Good examples of using PRs can be found in the Enterprise UI repository:
 <img src="https://github.com/arundo/git-conventions/blob/develop/images/good-list-of-prs-with-ci.png?raw=true" width="500">
 
+* ![#00ee11](https://placehold.it/15/00ee11/000000?text=+) Title contains ticket ID: such as `PS-60`, where PS is the ticket's board and 60 is the ticket's number.
+* ![#00ee11](https://placehold.it/15/00ee11/000000?text=+) Title contains a clear description 
+
+### ![#00ee11](https://placehold.it/15/00ee11/000000?text=+) [Good Example 2](https://github.com/arundo/git-conventions/pull/7)
+
+<img src="https://github.com/arundo/git-conventions/blob/develop/images/good-pr2.png?raw=true">
+
+* ![#00ee11](https://placehold.it/15/00ee11/000000?text=+) Clear title
+* ![#00ee11](https://placehold.it/15/00ee11/000000?text=+) Clear description
+* ![#00ee11](https://placehold.it/15/00ee11/000000?text=+) Comments in the PR
+* ![#00ee11](https://placehold.it/15/00ee11/000000?text=+) PR is squashed to avoid commit spam
+
 # Miscellaneous
+
+### GUI Tools
+
+You can do everything on the commandline, but here are a few options for using Git with visualization:
+
+- [GitKraken](https://www.gitkraken.com/)
+- [Git Tower](https://www.git-tower.com/features)
+- any built-in Git tools in your IDE (VS Code, JetBrains)
 
 ### Git and Project Management
 
@@ -251,7 +274,7 @@ Recommendations when using semver:
 * When a new project is created, start at `0.1.0`
 * Use `0.x.x` versions for rapid development before incrementing to a major release
   * Example: If we are writing v2, then keep semver to `0.1.x` until we are ready to increment to `2.0.0`
-* In Node, the version is kept inside `package.json` in the `"version": "x.x.x"` attribute:
+* In Node, the version is kept inside [package.json](https://github.com/arundo/fabric-service-stream-ingester/blob/develop/package.json#L3) in the `"version": "x.x.x"` attribute:
 
 ```js
 {
