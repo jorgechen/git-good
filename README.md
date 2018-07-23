@@ -123,6 +123,7 @@ Squash is minimalist and effective.
         * This solves developers' existential crisis when faced with the herculean effort to make descriptive commit messages every time they change one line of code
 * Cons
     * For a big feature, the squashed commit may become huge
+    * Lost history of your feature branch and cannot git-blame
 * Recommendation:
     * Use squash for most PRs if you want the best of working fast and keeping the repository readable
     * For a big feature, consider rebase instead to separate your PR into a few commits before merging into the main branch
@@ -135,7 +136,7 @@ Rebase allows us to "replay our commits" from one branch to another.  Using reba
 
 Once a feature branch is rebased on a development branch, merging the feature into the development branch will simply fast-forward the commit(s) of our new feature.  
 
-NOTE: If you are worth with 2+ people on a feature branch, do not rebase until the end to avoid conflicts!
+NOTE: If you are worth with 2+ people on a feature branch, either use multiple branches or rebase only at the end - else you'll have a lot of force pushing and conflicts!
 
 * Pros
     * No "Merge" commits cluttering the commit history
@@ -150,6 +151,9 @@ NOTE: If you are worth with 2+ people on a feature branch, do not rebase until t
 ### Learning Resources
 
 The [Advanced Git Tutorials from Atlassian](https://www.atlassian.com/git/tutorials/advanced-overview) is a great resource for the most common uses, including `merge` vs `rebase`, `reset`, `checkout`, `revert`.  We especially recommend learning about rebase.
+
+Tutorials
+- [Try Git](https://try.github.io/)
 
 Video Tutorials on Rebase:
 - [Introduction to Rebase](https://www.youtube.com/watch?v=TymF3DpidJ8)
