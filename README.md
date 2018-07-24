@@ -61,7 +61,7 @@ For example, my team agrees on the following rules:
   - Add a label `DO NOT MERGE` if the PR is still being worked on
   - Use squash merge (see below for more info)
 
-After a PR branch is merged back into the main branch, we recommend deleting that branch (see the Bad Example 4 later in this document).  This keeps our repository more readable! Don't worry, you can restore the branch later from its PR page.
+After a PR branch is merged back into the main branch, we recommend deleting that branch **by clicking "Delete Branch" in the PR page** (do not delete the branch via another way, otherwise GitHub won't cache it). This keeps our repository more readable! Don't worry, you can restore the branch later from its PR page.
 
 ### Creating and Deleting Branches
 
