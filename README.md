@@ -44,24 +44,28 @@ These recommendations are **not comprehensive nor mandatory**, but they are a go
 
 ### Creating a Pull Request (PR)
 
-To maximize collaboration, it's a team should decide on how to structure your PR process:
+To maximize collaboration, your team can decide on how to structure your PR process:
 - Formatting the PR title
 - Formatting the PR description (which is the first comment in the PR that describes its purpose)
 - Steps to review and merge it
 
-For example, my team agrees on the following rules:
+For example, my team may use the following conventions:
 
 - Format PR titles to be like `AB-123: Implement feature so and so`
 - Use a template for all PRs that contain these sections: 
   - **_Overview_**: 1 or 2 sentences describing the task, with an optional screenshot
   - **_How to Test_**: Steps for a reviewer to test the branch
-  - **_TODO_**: A list of items to do, if the PR is still a work in progress.
 - Review process:
   - One approval is required before PR can be merged
-  - Add a label `DO NOT MERGE` if the PR is still being worked on
-  - Use squash merge (see below for more info)
+  - Use squash merge for most PRs
+  - The PR requester should merge the PR
 
-After a PR branch is merged back into the main branch, we recommend deleting that branch **by clicking "Delete Branch" in the PR page** (do not delete the branch via another way, otherwise GitHub won't cache it). This keeps our repository more readable! Don't worry, you can restore the branch later from its PR page.
+
+##### Cleaning branches
+
+<img src="https://github.com/arundo/git-conventions/blob/develop/images/delete-branch-in-pr.png?raw=true" width="600">
+
+After a PR branch is merged back into the main branch, we recommend deleting that branch gby clicking "Delete Branch" in the PR page (do not delete the branch via another way, otherwise GitHub won't backup the branch). Don't worry, you can restore the branch later from its PR page.
 
 ### Creating and Deleting Branches
 
@@ -71,7 +75,14 @@ Recommendations when naming branches:
 * Prepend the branch name with the ticket ID. Example: `AB-123-sort-users`
 * If the branch is too generic, such as `bug-fix` or `lint-fix`, you can specify the date. Example: `lint-12-25-2018`  
 
-When starting a feature or bug, I strongly recommend first checking out the 
+Basically:
+
+```
+git checkout develop
+git pull
+git checkout -b AB-123-my-feature
+git push -u origin AB-123-my-feature
+```
 
 ---
 
