@@ -32,15 +32,15 @@ These recommendations are **not comprehensive nor mandatory**, but they are a go
     1. Title and Summary
     2. Installation
     3. Instructions for Local Development
-2. Create a `develop` branch
+2. Update restrictions on main branch:
     1. Go to Settings > Branches
-        1. Set the default branch to `develop`
-           * <img src="https://github.com/arundo/git-conventions/blob/develop/images/github-settings-branches.png?raw=true" width="300">
-        2. Go to Protected Branches > Choose a Branch > `develop`
-        3. This screenshot shows recommendations for configuring the main branch:
-           * <img src="https://github.com/arundo/git-conventions/blob/develop/images/github-settings-branch-protection.png?raw=true" width="500">
+    2. Click Protected Branches > Choose a Branch > `master`
+    3. This screenshot shows recommendations for configuring the main branch:
+      * <img src="https://github.com/arundo/git-conventions/blob/develop/images/github-settings-branch-protection.png?raw=true" width="500">
 3. (_Recommended:_) Go to Pull Requests > Labels, and create labels such as `DO NOT MERGE`, `WIP`
 4. (_Recommended:_) Set up a [template for your PR](https://help.github.com/articles/creating-a-pull-request-template-for-your-repository/)
+
+NOTE: many of our old repositories' main branches are named `develop`.  However, it is recommended to name `master` as the default branch.
 
 ### Creating a Pull Request (PR)
 
