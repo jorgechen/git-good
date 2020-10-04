@@ -149,7 +149,8 @@ NOTE: If you are worth with 2+ people on a feature branch, do not rebase until t
 
 ### Learning Resources
 
-The [Advanced Git Tutorials from Atlassian](https://www.atlassian.com/git/tutorials/advanced-overview) is a great resource for the most common uses, including `merge` vs `rebase`, `reset`, `checkout`, `revert`.  We especially recommend learning about rebase.
+- The [Advanced Git Tutorials from Atlassian](https://www.atlassian.com/git/tutorials/advanced-overview) is a great resource for the most common uses, including `merge` vs `rebase`, `reset`, `checkout`, `revert`.  We especially recommend learning about rebase.
+- [Git exercises](https://gitexercises.fracz.com/) for learning and practice
 
 Video Tutorials on Rebase:
 - [Introduction to Rebase](https://www.youtube.com/watch?v=TymF3DpidJ8)
